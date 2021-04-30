@@ -273,7 +273,7 @@ a {
 }
 
 .photo1 {
-    box-shadow: 0 0 2px 2px white;
+    box-shadow: 0px 0px 2px 2px white;
     width: 500px;
     margin-right: 100px;
 }
@@ -528,6 +528,10 @@ h4 {
 
 /* SECTION 4*/
 
+.section4-heading {
+    color: steelblue;
+}
+
 hr {
     width: 20%;
     margin-top: -50px;
@@ -552,6 +556,13 @@ hr {
     height: 400px;
     font-weight: 200;
     box-shadow: 0 4px 16px 0 rgb(0 76 151 / 10%);
+}
+
+.product-paragraph2 {
+    padding: 10px;
+    font-weight: 200;
+    font-size: 12px;
+    overflow: hidden;
 }
 
 .contact-card {
@@ -723,6 +734,31 @@ li:hover {
     bottom: 20px;
 }
 
+@media (max-width:450px) {
+    footer {
+        height: 600px;
+    }
+    #foot-icon {
+        display: none;
+    }
+    .container-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .social-icons {
+        position: absolute;
+        top: 420px;
+    }
+    .facebook {
+        height: 20px;
+        width: 20px;
+        margin: 30px;
+    }
+}
+
 /* FOOTER END */
 
 /* MEDIA QUERIES */
@@ -749,9 +785,6 @@ li:hover {
         display: none;
     }
     .photo2 {
-        display: none;
-    }
-    #foot-icon {
         display: none;
     }
 }
