@@ -181,3 +181,81 @@ button:hover {
 button:focus {
     outline: none;
 }
+
+@media (max-width: 450px) {
+    .nav .container {
+        margin: 0;
+        display: flex;
+    }
+    a {
+        font-size: 12px;
+    }
+    .signup-container {
+        width: 400px;
+        height: 600px;
+        position: absolute;
+        top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .inner-container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .leftside {
+        width: 300px;
+        height: 300px;
+        font-size: 12px;
+        border-top: 2px solid lightgrey;
+        border-right: none;
+    }
+    .photo-container {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    h2 {
+        position: absolute;
+        top: 415px;
+        font-size: 12px;
+    }
+    .photo {
+        height: 100px;
+        width: 100px;
+        margin: 5px;
+    }
+    .rigthside {
+        height: 300px;
+        width: 300px;
+    }
+    .right-inner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 70px;
+    }
+    h1 {
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 12px;
+    }
+    .radios {
+        font-size: 10px;
+        width: 300px;
+        margin-right: 0;
+    }
+    label {
+        font-size: 14px;
+    }
+    button {
+        width: 100px;
+        height: 25px;
+        font-size: 12px;
+        margin: 15px 0 15px 0;
+    }
+}
