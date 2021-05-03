@@ -188,7 +188,10 @@ button:focus {
         display: flex;
     }
     a {
-        font-size: 12px;
+        display: none;
+    }
+    .logo {
+        margin-left: 35px;
     }
     .signup-container {
         width: 400px;
@@ -256,6 +259,6 @@ button:focus {
         width: 100px;
         height: 25px;
         font-size: 12px;
-        margin: 15px 0 15px 0;
+        margin: 25px 0 0px 0;
     }
 }
