@@ -753,8 +753,8 @@ li:hover {
     #foot-icon {
         position: absolute;
         font-size: 50px;
-        top: 450px;
-        right: 30px;
+        top: 455px;
+        right: 15px;
     }
     .container-links {
         display: flex;
