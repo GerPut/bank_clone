@@ -80,8 +80,8 @@ body {
 @media (max-width:450px) {
     .logo {
         font-size: 16px;
-        margin-right: 140px;
         margin-left: 20px;
+        width: 200px;
     }
     .hamburger {
         display: block;
@@ -90,7 +90,7 @@ body {
         width: 30px;
         color: grey;
         font-size: 30px;
-        margin: 20px;
+        margin-right: 30px;
         align-self: center;
     }
     ul#links {
@@ -104,7 +104,10 @@ body {
         margin: 0;
     }
     .navlist {
-        font-size: 20px;
+        font-size: 12px;
+    }
+    nav {
+        width: 100%;
     }
 }
 
