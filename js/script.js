@@ -37,7 +37,7 @@ function showSlides() {
 //NAVBAR SMALL SCREENS ///////////////////////////////////////////////////////////
 
 const hamburgerButton = document.getElementById('hamburger')
-const navList = document.getElementById('nav-list')
+const navList = document.getElementById('links')
 
 
 function toggleButton() {
