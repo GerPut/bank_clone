@@ -14,3 +14,12 @@ function checkPassword() {
         return false
     }
 }
+
+
+const signUp = document.querySelector(".form-signup-button")
+
+signUp.addEventListener('click', toSignUp)
+
+function toSignUp() {
+    window.location = "signup.html"
+}
