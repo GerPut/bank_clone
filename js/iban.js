@@ -17,7 +17,7 @@ copybutton.addEventListener('click', () => {
     document.execCommand('copy')
     textarea.remove()
 
-    alert("Your IBAN number was successfully copied")
+    alert("Your RSA Key was successfully copied")
 })
 
 
