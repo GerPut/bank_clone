@@ -264,6 +264,7 @@ h3 {
 
 a {
     text-decoration: none;
+    color: red;
 }
 
 @media (max-width:450px) {
