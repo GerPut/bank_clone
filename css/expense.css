@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+:root {
+    --primary-color: steelblue;
+    --primary-font: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(images/pat-whelen-Rxt252RzQlY-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    width: 450px;
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid white;
+    box-shadow: 0 4px 16px 0 white;
+}
+
+h2 {
+    color: steelblue;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 15px;
+}
+
+h4 {
+    border-bottom: 1px solid grey;
+    margin: 10px 10px;
+    padding-bottom: 5px;
+}
+
+p {
+    text-align: center;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.inc-exp-container {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 50px;
+}
+
+.inc-exp-container>div {
+    flex: 1;
+    text-align: center;
+}
+
+.inc-exp-container>div:first-of-type {
+    border-right: 1px solid grey;
+}
+
+.money.plus {
+    color: green;
+}
+
+.money.minus {
+    color: red;
+}
+
+label {
+    display: inline-block;
+    margin: 5px 0;
+}
+
+input[type='text'], input[type='number'] {
+    border: 1px solid grey;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 100%;
+}
+
+.btn-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    background-color: steelblue;
+    border: 1px solid black;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn-add:focus {
+    outline: none;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.list li {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    padding: 2px;
+}
+
+.list li.plus {
+    border-right: 5px solid green;
+}
+
+.list li.minus {
+    border-right: 5px solid red;
+}
+
+.btn {
+    background-color: steelblue;
+    color: white;
+    width: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
