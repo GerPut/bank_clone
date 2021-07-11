@@ -292,8 +292,14 @@ h3 {
     font-weight: 200;
 }
 
-a {
+.product-container-link {
     text-decoration: none;
+    color: black;
+    transition: all 1.5s ease;
+}
+
+.product-container-link:hover {
+    cursor: pointer;
     color: red;
 }
 
@@ -364,14 +370,14 @@ a {
     height: 900px;
 }
 
-.headingsec2 {
+.section2-heading {
     color: white;
     text-align: center;
     margin-top: 60px;
     margin-bottom: 0;
 }
 
-.sub-headings {
+.section2-sub-headings {
     display: flex;
 }
 
@@ -416,7 +422,7 @@ a {
     z-index: -1;
 }
 
-img {
+.slide-image {
     vertical-align: middle;
 }
 
