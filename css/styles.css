@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
     font-family: 'Baskervville', serif;
     color: #222;
 }
@@ -173,16 +173,17 @@ body {
     z-index: -1;
 }
 
-.hero h1 {
+.hero__heading {
     font-size: 66px;
     margin: -20px 0 20px;
-    font-weight: 700;
+    font-weight: bold;
 }
 
-.hero p {
+.hero__paragraph {
     font-size: 20px;
     letter-spacing: 1px;
     font-weight: 200;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .button {
@@ -228,17 +229,19 @@ body {
 
 /* SECTION 1 */
 
-.section1 {
+.section_one {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-h2 {
+.section_heading {
     font-size: 50px;
     font-weight: bold;
     margin-top: 60px;
     margin-bottom: 60px;
+    display: block;
+    text-align: center;
     font-family: 'Baskervville', serif;
 }
 
