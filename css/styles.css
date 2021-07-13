@@ -37,7 +37,7 @@ body {
 .nav {
     position: fixed;
     color: var(--second-color);
-    background-color: var(--third-color);
+    background-color: rgba(255, 255, 255, 0.514);
     top: 0;
     left: 0;
     right: 0;
@@ -62,18 +62,18 @@ body {
 }
 
 .nav a {
-    color: var(--first-color);
+    color: var(--third-color);
     text-decoration: none;
     padding: 7px 15px;
     transition: all 0.3s ease-in-out;
 }
 
 .nav.active {
-    background-color: var(--second-color);
+    background-color: var(--third-color);
 }
 
 .nav.active a {
-    color: #000;
+    color: var(--first-color);
 }
 
 .nav.active .container {
@@ -952,7 +952,7 @@ body {
 
 /* FOOTER */
 
-footer {
+.footer {
     background-color: steelblue;
     height: 450px;
     position: relative;
@@ -961,10 +961,9 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-    ;
 }
 
-.container-links {
+.footer__container-links {
     display: flex;
     justify-content: center;
     height: 200px;
@@ -973,19 +972,11 @@ footer {
     top: 100px;
 }
 
-.about {
+.footer__about, .footer__locations, .footer__information {
     margin: 20px;
 }
 
-.locations {
-    margin: 20px;
-}
-
-.information {
-    margin: 20px;
-}
-
-h4 {
+.footer__subheadings {
     margin-bottom: 10px;
     color: white;
 }
@@ -1000,18 +991,18 @@ li:hover {
     cursor: pointer;
 }
 
-.social-icons {
+.footer__social-icons {
     display: flex;
     justify-content: center;
     position: absolute;
     top: 300px;
 }
 
-.facebook {
+.footer__icon-social {
     margin-right: 30px;
 }
 
-#foot-icon {
+#footer__university-logo {
     font-size: 250px;
     position: absolute;
     top: 95px;
@@ -1019,7 +1010,7 @@ li:hover {
     color: white;
 }
 
-.statement {
+.footer__statement {
     font-size: 10px;
     display: flex;
     justify-content: center;
@@ -1030,39 +1021,39 @@ li:hover {
 /* Large Phone screen */
 
 @media (max-width:425px) {
-    footer {
+    .footer {
         height: 600px;
         z-index: -1;
     }
-    #foot-icon {
+    #footer__university-logo {
         position: absolute;
         font-size: 30px;
         top: 470px;
         right: 25px;
     }
-    .container-links {
+    .footer__container-links {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         margin-top: 20px;
     }
-    .footerlist {
+    .footer__list {
         font-size: 12px;
     }
-    .social-icons {
+    .footer__social-icons {
         position: absolute;
         top: 420px;
     }
-    .facebook {
+    .footer__icon-social {
         height: 20px;
         width: 20px;
         margin: 30px;
     }
-    .owner {
+    .footer__owner-statement {
         font-size: 10px;
     }
-    .statement {
+    .footer__statement {
         text-align: center;
     }
 }
@@ -1070,13 +1061,13 @@ li:hover {
 /* Tablet View */
 
 @media (width:768px) {
-    #foot-icon {
+    #footer__university-logo {
         position: absolute;
         top: 300px;
         right: 75px;
         font-size: 60px;
     }
-    .statement {
+    .footer__statement {
         text-align: center;
         padding: 15px;
     }
@@ -1085,13 +1076,13 @@ li:hover {
 /* Laptop View */
 
 @media (width:1024px) {
-    #foot-icon {
+    #footer__university-logo {
         position: absolute;
         top: 210px;
         right: 75px;
         font-size: 160px;
     }
-    .statement {
+    .footer__statement {
         text-align: center;
         padding: 15px;
     }
