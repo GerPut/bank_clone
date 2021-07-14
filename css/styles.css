@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 :root {
-    --first-color: #fff;
-    --second-color: #CCCCCC;
+    --first-color: white;
+    --second-color: steelblue;
     --third-color: #222;
     --fourth-color: rgb(0, 93, 168);
-    --fifth-color: rgb(250, 75, 75);
+    --fifth-color: red;
     --main-font: 'Merriweather', serif;
     --secondary-font: 'Open Sans', sans-serif;
 }
@@ -14,6 +14,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -36,7 +40,7 @@ body {
 
 .nav {
     position: fixed;
-    color: var(--second-color);
+    color: var(--first-color);
     background-color: rgba(255, 255, 255, 0.651);
     top: 0;
     left: 0;
@@ -193,38 +197,6 @@ body {
     font-weight: bold;
 }
 
-/* .button {
-    margin-top: 30px;
-    width: 150px;
-    height: 50px;
-    border-radius: 25px;
-    background-color: steelblue;
-    border: 2px solid white;
-    box-shadow: inset 0 0 2px 2px white;
-    color: white;
-    font-size: 16px;
-    position: absolute;
-    display: inline-block;
-    vertical-align: middle;
-} */
-
-/* 
-.button:hover {
-    background-color: rgba(70, 131, 180, 0.651);
-    cursor: pointer;
-} */
-
-.content p {
-    color: #555;
-    line-height: 30px;
-    letter-spacing: 1.2px;
-    font-family: var(--secondary-font);
-}
-
-.icon1 {
-    display: none;
-}
-
 @media (max-width:425px) {
     .hero h1 {
         font-size: 32px;
@@ -271,12 +243,12 @@ body {
     margin: 30px;
     width: 350px;
     height: 300px;
-    box-shadow: 0 4px 16px 0 rgb(0 76 151 / 10%);
+    box-shadow: 0 4px 16px 0 rgb(0 76 151 / 50%);
 }
 
 .fas.fa-piggy-bank, .fas.fa-bullseye, .fas.fa-calculator, .fas.fa-comment-dollar {
     font-size: 75px;
-    color: steelblue;
+    color: var(--second-color);
     margin-bottom: 25px;
 }
 
@@ -298,7 +270,7 @@ body {
 
 .product__link:hover {
     cursor: pointer;
-    color: red;
+    color: var(--fifth-color);
 }
 
 /* Large Phone Screen */
@@ -360,7 +332,7 @@ body {
 /* SECTION 2 */
 
 .section__two {
-    background-color: steelblue;
+    background-color: var(--second-color);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -369,7 +341,7 @@ body {
 }
 
 .section__heading-special {
-    color: white;
+    color: var(--first-color);
     text-align: center;
     margin-bottom: 0;
     font-size: 50px;
@@ -378,7 +350,7 @@ body {
     margin-bottom: 20px;
     display: block;
     text-align: center;
-    font-family: 'Baskervville', serif;
+    font-family: var(--main-font);
 }
 
 .section__sub-headings-flex {
@@ -389,7 +361,7 @@ body {
     margin: 20px 230px 20px 230px;
     font-weight: 300;
     font-size: 24px;
-    color: white;
+    color: var(--first-color);
 }
 
 .photosdiv {
@@ -398,7 +370,7 @@ body {
 }
 
 .photodiv__photo-one {
-    box-shadow: 0px 0px 2px 2px white;
+    box-shadow: 0px 0px 2px 2px var(--first-color);
     width: 500px;
     margin-right: 100px;
 }
@@ -414,7 +386,7 @@ body {
 }
 
 .photodiv__photo-two {
-    box-shadow: 0 0 2px 2px white;
+    box-shadow: 0 0 2px 2px var(--first-color);
     width: 500px;
     margin-left: 100px;
 }
@@ -436,19 +408,19 @@ body {
     max-width: 500px;
     position: relative;
     margin: auto;
-    box-shadow: 0 0 2px 2px white;
+    box-shadow: 0 0 2px 2px var(--first-color);
     z-index: 0;
 }
 
 .Slides__text {
-    color: white;
+    color: var(--first-color);
     font-size: 30px;
     font-weight: 300;
     padding: 8px 12px;
     position: absolute;
     width: 100%;
     bottom: 0px;
-    background-color: red;
+    background-color: var(--fifth-color);
     text-align: center;
 }
 
@@ -664,7 +636,7 @@ body {
 }
 
 .section__sub-headings-dark {
-    color: #000;
+    color: var(--third-color);
     font-size: 24px;
     padding-bottom: 5px;
 }
@@ -851,9 +823,9 @@ body {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 200;
-    border: 1px solid white;
+    border: 1px solid var(--first-color);
     box-shadow: inset 0 4px 16px 0 rgb(0 76 151 / 10%);
-    color: black;
+    color: var(--third-color);
 }
 
 .contact__form textarea {
@@ -871,9 +843,9 @@ body {
     justify-content: center;
     align-items: center;
     margin: 10px;
-    background-color: steelblue;
-    border: 1px solid black;
-    color: white;
+    background-color: var(--second-color);
+    border: 1px solid var(--third-color);
+    color: var(--first-color);
     font-size: 18px;
     width: 100px;
     height: 50px;
@@ -892,7 +864,7 @@ body {
 
 .contact__form .contact__form-btn:hover {
     background-color: rgb(204, 214, 246);
-    color: black;
+    color: var(--third-color);
 }
 
 /* Large Phone Screen */
@@ -954,7 +926,7 @@ body {
 /* FOOTER */
 
 .footer {
-    background-color: steelblue;
+    background-color: var(--second-color);
     height: 450px;
     position: relative;
     display: flex;
@@ -979,7 +951,7 @@ body {
 
 .footer__subheadings {
     margin-bottom: 10px;
-    color: white;
+    color: var(--first-color);
 }
 
 li {
@@ -988,7 +960,7 @@ li {
 }
 
 li:hover {
-    color: white;
+    color: var(--first-color);
     cursor: pointer;
 }
 
@@ -1008,7 +980,7 @@ li:hover {
     position: absolute;
     top: 95px;
     right: 100px;
-    color: white;
+    color: var(--first-color);
 }
 
 .footer__statement {
