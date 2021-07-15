@@ -1,6 +1,4 @@
 
-//Variables
-
 const currencyEl_one = document.getElementById('currency-one')
 const amountEl_one = document.getElementById('amount-one')
 const currencyEl_two = document.getElementById('currency-two')
@@ -9,7 +7,6 @@ const amountEl_two = document.getElementById('amount-two')
 const rateEl = document.getElementById('rate')
 const swap = document.getElementById('swap')
 
-//Fetch exchange rate and update the DOM
 
 function calculate() {
     const currency_one = currencyEl_one.value
@@ -19,8 +16,7 @@ function calculate() {
         .then(res => res.json())
         .then(data => {
 
-            const rate = data.conversion_rates[currency_two]
-            console.log(rate)
+            const rate = (data.conversion_rates[currency_two]).toFixed(2)
 
             rateEl.innerText = `1 ${currency_one} = ${rate} ${currency_two}`
 
@@ -31,8 +27,6 @@ function calculate() {
 
 }
 
-
-//Event Listeners
 
 currencyEl_one.addEventListener('change', calculate)
 amountEl_one.addEventListener('input', calculate)
