@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 :root {
-    --primary-color: steelblue;
+    --main-font: 'Merriweather', serif;
     --secondary-font: 'Open Sans', sans-serif;
-    --primary-font: 'Merriweather', serif;
+    --first-color: white;
+    --second-color: steelblue;
+    --third-color: #222;
+    --fourth-color: grey;
+    --fifth-color: red;
 }
 
 * {
@@ -20,7 +24,7 @@ body {
     overflow: hidden;
     width: 100%;
     height: 100vh;
-    color: white;
+    color: var(--third-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,25 +34,25 @@ body {
 }
 
 h2 {
-    color: steelblue;
-    font-family: var(--primary-font);
+    color: var(--second-color);
+    font-family: var(--main-font);
     margin-bottom: 30px;
 }
 
 p {
     text-align: center;
-    color: black;
-    font-family: 'Open Sans', sans-serif;
+    color: var(--third-color);
+    font-family: var(--secondary-font);
 }
 
 .btn {
-    color: white;
+    color: var(--first-color);
     height: 40px;
     width: 90px;
-    background: var(--primary-color);
+    background: var(--second-color);
     font-family: var(--secondary-font);
     font-size: 16px;
-    border: 1px solid black;
+    border: 1px solid var(--third-color);
 }
 
 .btn:hover {
@@ -62,10 +66,10 @@ p {
     justify-content: center;
     height: 500px;
     width: 450px;
-    background-color: white;
+    background-color: var(--first-color);
     border-radius: 15px;
-    border: 2px solid white;
-    box-shadow: 0 4px 16px 0 white;
+    border: 2px solid var(--first-color);
+    box-shadow: 0 4px 16px 0 var(--first-color);
 }
 
 .currency {
@@ -80,7 +84,7 @@ p {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-    border: 1px solid white;
+    border: 1px solid var(--first-color);
     font-size: 16px;
     background: transparent;
     background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%20000002%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
@@ -90,7 +94,7 @@ p {
 }
 
 .currency input {
-    border: 1px solid black;
+    border: 1px solid var(--third-color);
     width: 200px;
     background: transparent;
     font-size: 30px;
@@ -104,10 +108,10 @@ p {
 }
 
 .rate {
-    color: var(--primary-color);
+    color: var(--second-color);
     font-size: 20px;
     padding: 0 10px;
-    font-family: var(--primary-font);
+    font-family: var(--main-font);
 }
 
 select:focus, input:focus, button:focus {
