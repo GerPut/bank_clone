@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+:root {
+    --main-font: 'Merriweather', serif;
+    --secondary-font: 'Open Sans', sans-serif;
+    --first-color: white;
+    --second-color: steelblue;
+    --third-color: #222;
+    --fourth-color: grey;
+    --fifth-color: red;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,7 +24,7 @@ body {
     overflow: hidden;
     width: 100%;
     height: 100vh;
-    color: white;
+    color: var(--first-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,19 +36,19 @@ body {
 .login-container {
     height: 500px;
     width: 450px;
-    background-color: white;
+    background-color: var(--first-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    box-shadow: 0 4px 16px 0 white;
+    box-shadow: 0 4px 16px 0 var(--first-color);
 }
 
 h2 {
-    color: steelblue;
+    color: var(--second-color);
     font-size: 25px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--main-font);
     margin-bottom: 10px;
 }
 
@@ -53,53 +64,58 @@ input {
     border-radius: 5px;
 }
 
+input:hover {
+    border: 1px solid var(--second-color);
+}
+
 .forminput {
     padding: 0 20px;
-    border: 1px solid black;
+    border: 1px solid var(--third-color);
     font-size: 18px;
-    color: black;
+    color: var(--third-color);
 }
 
 .forminput1 {
     padding: 0 20px;
-    border: 1px solid black;
+    border: 1px solid var(--third-color);
     font-size: 18px;
-    color: black;
+    color: var(--third-color);
 }
 
 .form-login-button {
-    background-color: steelblue;
-    border: 1px solid black;
-    color: white;
+    background-color: var(--second-color);
+    border: 1px solid var(--third-color);
+    color: var(--first-color);
     font-size: 18px;
     cursor: pointer;
 }
 
 .form-login-button:hover {
-    background-color: black;
+    background-color: var(--third-color);
+    border: 1px solid var(--third-color);
 }
 
 .form-signup-button {
     font-size: 18px;
-    border: 1px solid black;
+    border: 1px solid var(--third-color);
 }
 
 .form-signup-button:hover {
     font-size: 18px;
     color: white;
-    border: 1px solid black;
-    background-color: black;
+    border: 1px solid var(--third-color);
+    background-color: var(--third-color);
     cursor: pointer;
 }
 
 .formlink {
     font-size: 13px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--secondary-font);
     margin: 10px;
 }
 
 p {
     font-size: 13px;
-    color: grey;
-    font-family: 'Open Sans', sans-serif;
+    color: var(--fourth-color);
+    font-family: var(--secondary-font);
 }

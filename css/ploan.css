@@ -53,7 +53,7 @@ h2 {
 }
 
 p {
-    color: var(--second-color);
+    color: var(--third-color);
     font-weight: bold;
     margin-top: 10px;
 }
@@ -67,6 +67,8 @@ label {
     text-align: left;
     margin-top: 15px;
     margin-bottom: 5px;
+    font-family: var(--main-font);
+    color: var(--second-color);
 }
 
 input[type='text'], input[type='number'] {
