@@ -32,7 +32,7 @@ body {
 
 .nav {
     position: fixed;
-    color: #fff;
+    color: var(--first-color);
     background-color: var(--second-color);
     top: 0;
     left: 0;
@@ -58,7 +58,7 @@ body {
 }
 
 .nav a {
-    color: #fff;
+    color: var(--first-color);
     text-decoration: none;
     padding: 7px 15px;
     transition: all 0.3s ease-in-out;
@@ -108,7 +108,7 @@ h3 {
     width: 1200px;
     box-shadow: 1px 1px 20px 8px lightgrey;
     margin-top: 60px;
-    background-color: white;
+    background-color: var(--first-color);
     border-radius: 15px;
 }
 
@@ -134,7 +134,7 @@ h3 {
 }
 
 .action:hover {
-    color: white;
+    color: var(--first-color);
     background-color: var(--second-color);
     cursor: pointer;
     border-bottom: 2px solid var(--third-color);
@@ -231,19 +231,22 @@ a {
         font-size: 16px;
     }
     .personal-container {
-        width: 800px;
+        width: 900px;
         height: 600px;
         position: absolute;
         top: 50px;
     }
     h2 {
-        font-size: 20px;
+        font-size: 32px;
         margin-top: 70px;
     }
     h3 {
-        font-size: 20px;
+        font-size: 32px;
         margin-top: 70px;
-        margin-left: 400px;
+        margin-left: 500px;
+    }
+    .menulist {
+        margin-left: 60px;
     }
     .action {
         font-size: 20px;
@@ -251,17 +254,27 @@ a {
     .accountlist {
         font-size: 20px;
         width: 300px;
-        height: 300px;
-        margin-left: 400px;
+        height: 400px;
+        margin-left: 300px;
         display: flex;
         flex-direction: column;
     }
     .account {
         font-size: 20px;
-        width: 350px;
+        width: 520px;
         margin-bottom: 0;
         padding: 10px;
         display: flex;
         justify-content: space-between;
+    }
+}
+
+@media (max-width:1024px) {
+    .personal-container {
+        position: absolute;
+        top: 100px;
+    }
+    .nav .container {
+        margin: 0 100px;
     }
 }
