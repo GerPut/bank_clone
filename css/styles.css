@@ -886,7 +886,6 @@ body {
     .about__card {
         width: 400px;
         height: 350px;
-        overflow-y: scroll;
     }
     .contact__card {
         width: 400px;
