@@ -1,4 +1,4 @@
-Bank Clone 
+## Bank Site Project 
 
 This is my largest project that includes 3 mini projects. I am continuously working on this project to perfecting it and fix bugs. I had a look at other bank landing pages and their content and came up with my own that looks similar. The site is responsive to all screen sizes. The site is devided up into sections. The links in the navbar takes the user to the different sections of the page. The navbar is styled in a way that changes its color when the user scrolls down the page.
 
