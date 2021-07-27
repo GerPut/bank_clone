@@ -1,5 +1,8 @@
+//ANIMATE ON SCROLL
+AOS.init();
 
-// NAVBAR /////////////////////////////////////////////////////////////////
+
+// NAVBAR //
 const nav = document.querySelector('.nav')
 window.addEventListener('scroll', fixNav)
 
@@ -15,7 +18,7 @@ function fixNav() {
 
 
 
-// SLIDESHOW ///////////////////////////////////////////////////////////////////////
+// SLIDESHOW //
 
 var slideIndex = 0;
 showSlides();
@@ -34,7 +37,7 @@ function showSlides() {
 
 
 
-//NAVBAR SMALL SCREENS ///////////////////////////////////////////////////////////
+//NAVBAR SMALL SCREENS //
 
 const hamburgerButton = document.getElementById('hamburger')
 const navList = document.getElementById('links')
