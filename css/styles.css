@@ -792,7 +792,7 @@ body {
     width: 600px;
     height: 400px;
     font-weight: 200;
-    box-shadow: 0 4px 16px 0 rgb(0 76 151 / 10%);
+    box-shadow: 0 4px 16px 0 rgb(0 76 151 / 50%);
 }
 
 .paragraph-text-padding {
@@ -810,7 +810,7 @@ body {
     margin: 30px;
     width: 600px;
     height: 400px;
-    box-shadow: 0 4px 16px 0 rgb(0 76 151 / 10%);
+    box-shadow: 0 4px 16px 0 rgb(0 76 151 / 50%);
 }
 
 .contact__form {
