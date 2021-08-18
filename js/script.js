@@ -1,7 +1,6 @@
 //ANIMATE ON SCROLL
 AOS.init();
 
-
 // NAVBAR //
 const nav = document.querySelector('.nav')
 window.addEventListener('scroll', fixNav)
@@ -13,10 +12,6 @@ function fixNav() {
         nav.classList.remove('active')
     }
 }
-
-
-
-
 
 // SLIDESHOW //
 
@@ -35,13 +30,10 @@ function showSlides() {
     setTimeout(showSlides, 5000);
 }
 
-
-
 //NAVBAR SMALL SCREENS //
 
 const hamburgerButton = document.getElementById('hamburger')
 const navList = document.getElementById('links')
-
 
 function toggleButton() {
     navList.classList.toggle('show')
