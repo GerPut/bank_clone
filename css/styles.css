@@ -101,7 +101,7 @@ body {
 
 /* Large Phone Screen */
 
-@media (max-width:425px) {
+@media (max-width:480px) {
     html, body {
         overflow-x: hidden;
     }
@@ -273,7 +273,7 @@ body {
     color: var(--fifth-color);
 }
 
-/* Large Phone Screen */
+/* Phone Screen */
 
 @media (max-width:425px) {
     .section__heading {
@@ -312,6 +312,8 @@ body {
         font-size: 14px;
     }
 }
+
+/* Desktop */
 
 @media (width:1024px) {
     .product__container {
@@ -479,7 +481,7 @@ body {
 
 /* Large Phone Screen */
 
-@media (max-width:425px) {
+@media (max-width:480px) {
     .section__heading-special {
         font-size: 30px;
         text-align: center;
@@ -563,7 +565,7 @@ body {
     }
 }
 
-/* Laptop View */
+/* Desktop View */
 
 @media (width:1024px) {
     .section__heading-special {
@@ -660,7 +662,7 @@ body {
 
 /* Large Phone screen */
 
-@media (max-width:425px) {
+@media (max-width:480px) {
     .paragraph-text {
         font-size: 12px;
     }
@@ -733,7 +735,7 @@ body {
     }
 }
 
-/* Laptop View */
+/* Desktop View */
 
 @media (width:1024px) {
     .paragraph-text {
@@ -874,7 +876,7 @@ body {
 
 /* Large Phone Screen */
 
-@media (max-width:425px) {
+@media (max-width:480px) {
     .contact__container {
         display: flex;
         flex-direction: column;
@@ -913,6 +915,8 @@ body {
         height: 350px;
     }
 }
+
+/* Desktop */
 
 @media (width:1024px) {
     .about__card {
@@ -977,14 +981,8 @@ li:hover {
 
 .footer__icon-social {
     margin-right: 30px;
-}
-
-#footer__university-logo {
-    font-size: 250px;
-    position: absolute;
-    top: 95px;
-    right: 100px;
     color: var(--first-color);
+    font-size: 50px;
 }
 
 .footer__statement {
@@ -997,16 +995,10 @@ li:hover {
 
 /* Large Phone screen */
 
-@media (max-width:425px) {
+@media (max-width:480px) {
     .footer {
         height: 600px;
         z-index: -1;
-    }
-    #footer__university-logo {
-        position: absolute;
-        font-size: 30px;
-        top: 470px;
-        right: 25px;
     }
     .footer__container-links {
         display: flex;
@@ -1025,7 +1017,7 @@ li:hover {
     .footer__icon-social {
         height: 20px;
         width: 20px;
-        margin: 30px;
+        margin: 25px;
     }
     .footer__owner-statement {
         font-size: 10px;
@@ -1038,27 +1030,15 @@ li:hover {
 /* Tablet View */
 
 @media (width:768px) {
-    #footer__university-logo {
-        position: absolute;
-        top: 300px;
-        right: 75px;
-        font-size: 60px;
-    }
     .footer__statement {
         text-align: center;
         padding: 15px;
     }
 }
 
-/* Laptop View */
+/* Desktop View */
 
 @media (width:1024px) {
-    #footer__university-logo {
-        position: absolute;
-        top: 210px;
-        right: 75px;
-        font-size: 160px;
-    }
     .footer__statement {
         text-align: center;
         padding: 15px;
